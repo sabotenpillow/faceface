@@ -22,24 +22,6 @@ main(int argc, char *argv[])
   // 画像をそのまま読み込む．ただし，アルファチャンネルは無視される．
   cv::Mat img3 = cv::imread(base, -1);
 
-  /// 画像を表示するウィンドウ
-  // ウィンドウの名前，プロパティ
-  // CV_WINDOW_AUTOSIZE : ウィンドウサイズを画像サイズに合わせる
-  // CV_WINDOW_FREERATIO : ウィンドウのアスペクト比を固定しない
-  // cv::namedWindow("image1", CV_WINDOW_AUTOSIZE|CV_WINDOW_FREERATIO);
-  // ウィンドウ名でウィンドウを指定して，そこに画像を描画
-  // cv::imshow("image1", src_img);
-   
-  // デフォルトのプロパティで表示
-  // cv::imshow("image2", src_img);
-
-  // キー入力を（無限に）待つ
-  // cv::waitKey(0);
-
-  // if(cv::imwrite("outlines/hoge.png", img1))
-  //   std::cout << "imwrite:" << img1 << " ... success" << std::endl;
-  // else
-  //   std::cout << "imwrite:" << img1 << " ... failure" << std::endl;
   imageWrite("outlines/hoge.png", img1);
   // imageWrite("outlines/piyo.png", img2);
   imageWrite(dest, img2);
