@@ -2,3 +2,5 @@ opencv
 opencv2
 opencv_3.2.0
 opencv-2.2.0
+*.out
+outlines
